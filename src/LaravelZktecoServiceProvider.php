@@ -2,9 +2,9 @@
 
 namespace MehediJaman\LaravelZkteco;
 
+use MehediJaman\LaravelZkteco\Commands\LaravelZktecoCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MehediJaman\LaravelZkteco\Commands\LaravelZktecoCommand;
 
 class LaravelZktecoServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +17,9 @@ class LaravelZktecoServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-zkteco')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-zkteco_table')
-            ->hasCommand(LaravelZktecoCommand::class);
+            ->hasConfigFile();
+            // ->hasViews()
+            // ->hasMigration('create_laravel-zkteco_table')
+            // ->hasCommand(LaravelZktecoCommand::class);
     }
 }
