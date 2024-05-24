@@ -18,8 +18,8 @@ class LaravelZktecoServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-zkteco')
             ->hasConfigFile();
-            // ->hasViews()
-            // ->hasMigration('create_laravel-zkteco_table')
-            // ->hasCommand(LaravelZktecoCommand::class);
+        // ->hasViews()
+        // ->hasMigration('create_laravel-zkteco_table')
+        // ->hasCommand(LaravelZktecoCommand::class);
     }
 }
