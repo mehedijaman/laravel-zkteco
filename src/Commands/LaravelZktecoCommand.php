@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace MehediJaman\LaravelZkteco\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelZktecoCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-zkteco';
 
     public $description = 'My command';
 
