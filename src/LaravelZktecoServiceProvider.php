@@ -2,9 +2,9 @@
 
 namespace MehediJaman\LaravelZkteco;
 
+use MehediJaman\LaravelZkteco\Commands\LaravelZktecoCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MehediJaman\LaravelZkteco\Commands\LaravelZktecoCommand;
 
 class LaravelZktecoServiceProvider extends PackageServiceProvider
 {
