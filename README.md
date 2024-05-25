@@ -5,15 +5,14 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/mehedijaman/laravel-zkteco/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/mehedijaman/laravel-zkteco/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/mehedijaman/laravel-zkteco.svg?style=flat-square)](https://packagist.org/packages/mehedijaman/laravel-zkteco)
 
+## Overview
 The Laravel ZKTeco package provides an easy way to integrate ZKTeco biometric devices with your Laravel application. This package simplifies the process of connecting to ZKTeco devices, fetching attendance logs, and managing user data.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-zkteco.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-zkteco)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+## Features
+-   **Easy Integration:** Seamlessly connect your Laravel application with ZKTeco biometric devices.
+-   **Attendance Management:** Fetch and manage attendance logs from connected devices.
+-   **User Management:** Add, update, and remove users on the biometric device directly from your application.
+-   **Real-time Data Sync:** Ensure that your application always has the latest attendance data.
 
 ## Installation
 
@@ -22,32 +21,9 @@ You can install the package via composer:
 ```bash
 composer require mehedijaman/laravel-zkteco
 ```
+The package is designed to automatically register itself upon installation.
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-zkteco-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-zkteco-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-zkteco-views"
-```
+Please ensure that the PHP sockets extension is enabled on your server. If it is not enabled, you will need to activate it.
 
 ## Usage
 
