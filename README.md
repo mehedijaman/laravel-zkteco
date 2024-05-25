@@ -25,17 +25,50 @@ The package is designed to automatically register itself upon installation.
 
 Please ensure that the PHP sockets extension is enabled on your server. If it is not enabled, you will need to activate it.
 
-## Usage
+## Activate PHP Socket
+Ensure that the PHP sockets extension is enabled on your server. If it is not enabled, follow these steps to activate it:
 
-```php
-$laravelZkteco = new MehediJaman\LaravelZkteco();
-echo $laravelZkteco->echoPhrase('Hello, MehediJaman!');
+Locate the php.ini File:
+The php.ini file's location depends on your PHP installation. Common locations include:
+
+-   /etc/php/8.x/cli/php.ini (for CLI)
+-   /etc/php/8.x/apache2/php.ini (for Apache)
+-   /etc/php/8.x/fpm/php.ini (for PHP-FPM)
+
+Edit the php.ini File:
+Open the php.ini file in a text editor with superuser privileges:
+
+```
+sudo nano /etc/php/7.x/apache2/php.ini
+```
+Uncomment the Sockets Extension:
+Find the following line:
+
+```
+;extension=sockets
 ```
 
-## Testing
+Remove the semicolon (;) to uncomment the line:
+```
+extension=sockets
+```
 
-```bash
-composer test
+Save and Exit:
+Save the changes and exit the editor (Ctrl + X, Y, Enter).
+
+Restart the Web Server:
+Restart the web server to apply the changes:
+
+```
+sudo systemctl restart apache2
+```
+
+## Usage
+
+Instantiate the LaravelZkteco Object.
+```php
+use MehediJaman\LaravelZkteco\LaravelZkteco;
+$zk = new MehediJaman\LaravelZkteco('ipaddress', 'port');
 ```
 
 ## Changelog
@@ -53,7 +86,6 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Mehedi Jaman](https://github.com/mehedijaman)
-- [All Contributors](../../contributors)
 
 ## License
 
