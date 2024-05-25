@@ -2,9 +2,10 @@
     "name": "mehedijaman/laravel-zkteco",
     "description": "Connect any zkteco fingerprint attendance machine to laravel application with no effort.",
     "keywords": [
-        "MehediJaman",
-        "laravel",
-        "laravel-zkteco"
+        "ZKTeco",
+        "Fingerprint",
+        "TimeAttendance",
+        "Laravel"
     ],
     "homepage": "https://github.com/mehedijaman/laravel-zkteco",
     "license": "MIT",
