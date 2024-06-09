@@ -76,14 +76,14 @@ Call ZKTeco methods
 
 * __Connect__ 
 ```php
-//    connect
+//    connect device
 //    this return bool
     $zk->connect();   
 ```
 
 * __Disconnect__ 
 ```php
-//    disconnect
+//    disconnect device
 //    this return bool
 
     $zk->disconnect();   
@@ -91,7 +91,7 @@ Call ZKTeco methods
 
 * __Enable Device__ 
 ```php
-//    enable
+//    enable devices
 //    this return bool/mixed
 
     $zk->enableDevice();   
@@ -100,7 +100,7 @@ Call ZKTeco methods
 
 * __Disable Device__ 
 ```php
-//    disable 
+//    disable  device
 //    this return bool/mixed
 
     $zk->disableDevice(); 

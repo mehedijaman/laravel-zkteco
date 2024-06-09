@@ -424,6 +424,6 @@ class LaravelZkteco
 
     public function writeLCD()
     {
-        return Device::writeLCD($this, 2, 'RAIHAN Afroz Topu');
+        return Device::writeLCD($this, 2, 'Laravel ZkTeco');
     }
 }
